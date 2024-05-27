@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  add-to-cart:
+    image: front-1:latest
+    container_name: add-to-cart
+    ports:
+      - 3003:3003
+  mf-cart:
+    image: front-2:latest
+    container_name: mf-cart
+    ports:
+      - 3002:3002
+  mf-home:
+    image: front-3:latest
+    container_name: mf-home
+    ports:
+      - 3000:3000
+  mf-pdp:
+    image: front-4:latest
+    container_name: mf-pdp
+    ports:
+      - 3001:3001
+  server-host:
+    image: front-5:latest
+    container_name: server-host
+    ports: 
+      - 8080:8080
